@@ -48,7 +48,7 @@ export class StudentController {
         phone: {
           type: 'number',
         },
-        username: {
+        status: {
           type: 'string',
         },
       },

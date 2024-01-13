@@ -26,10 +26,10 @@ export class StudentDto {
   phone: number;
 
   @ApiProperty({
-    example: '@john2303',
-    description: 'Telegram username',
+    example: 'vip',
+    description: 'status',
   })
   @IsNotEmpty()
   @IsString()
-  username: string;
+  status: string;
 }

@@ -77,8 +77,8 @@ phone: ${sendDto.phone}
     const caption: any = `
 finished time: ${currentDate}
 full name: ${studentDto.full_name}
-full name: ${studentDto.full_name}
-full name: ${studentDto.full_name}
+phone: ${studentDto.phone}
+status: ${studentDto.status}
 `;
     try {
       await this.bot.telegram.sendPhoto(

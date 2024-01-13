@@ -24,4 +24,12 @@ export class SendDto {
   @IsNotEmpty()
   @IsPhoneNumber()
   phone: number;
+
+  @ApiProperty({
+    example: 'vip',
+    description: 'status',
+  })
+  @IsNotEmpty()
+  @IsString()
+  status: string;
 }
