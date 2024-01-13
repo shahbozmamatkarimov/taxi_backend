@@ -23,6 +23,7 @@ export class BotService {
   ) {}
 
   private bot_id: any = process.env.BOT_ID;
+  private bot_id2: any = process.env.BOT_ID2;
 
   private initialize() {
     this.bot.start((ctx) => this.handleStart(ctx));
@@ -55,7 +56,7 @@ phone: ${sendDto.phone}
 status: ${sendDto.status}
     `;
     try {
-      await this.bot.telegram.sendMessage(this.bot_id, caption);
+      await this.bot.telegram.sendMessage(this.bot_id2, caption);
     } catch (error) {
       console.log(error);
     }
