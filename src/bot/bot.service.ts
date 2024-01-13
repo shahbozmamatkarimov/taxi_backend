@@ -52,6 +52,7 @@ export class BotService {
     const caption: any = `
 full name: ${sendDto.full_name}
 phone: ${sendDto.phone}
+status: ${sendDto.status}
     `;
     try {
       await this.bot.telegram.sendMessage(this.bot_id, caption);
